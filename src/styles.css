@@ -1,0 +1,83 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #d5e0ee;
+}
+
+.container {
+  margin: 10px 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.app {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: minmax(50px, auto) repeat(5, 50px);
+}
+
+.app > input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.app > button {
+  cursor: pointer;
+  font-size: 2rm;
+  border: 1px solid black;
+  outline: none;
+  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.label{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.action {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.span-one {
+  grid-column: span 1;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.span-three {
+  grid-column: span 3;
+}
+
+.span-four {
+  grid-column: span 4;
+}
+
+.span-five {
+  grid-column: span 5;
+}
+
+.span-six {
+  grid-column: span 6;
+}
+
+.span-seven {
+  grid-column: span 7;
+}
